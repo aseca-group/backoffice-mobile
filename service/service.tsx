@@ -2,8 +2,8 @@ import { Order } from "@/app/orders";
 import { Delivery } from "@/app/deliveries";
 import { Inventory } from "@/app/inventory";
 
-//const url = 'http://localhost:8080';
-const url = 'http://192.168.0.12:8080';
+const url = 'http://control-tower-control-tower-1:8080';
+
 export const getOrders = async () => {
   try {
     const response = await fetch(`${url}/order`);

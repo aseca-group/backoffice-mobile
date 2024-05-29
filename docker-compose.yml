@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  app:
+    build: .
+    ports:
+      - "19000:19000"
+      - "19001:19001"
+      - "19002:19002"
+    volumes:
+      - .:/app
+    networks:
+      - control-tower_some-net
+
+networks:
+  control-tower_some-net:
+    external: true
